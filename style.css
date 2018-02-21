@@ -1,0 +1,95 @@
+* {
+    font-family: 'lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+.first-nav-container {
+    display: flex;
+    background-color: #f5c73c;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5%;
+    color: white;
+    height: 60px;
+}
+
+.first-nav-container span {
+    font-size: 13px;
+}
+
+.second-nav-container {
+    display: block;
+    background-color: #ca4e3d;
+    width: inherit;
+    height: 30px;
+}
+
+.second-nav-container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.second-nav-container div a {
+    height: 100%;
+    width: 100%;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.second-nav-container div a::before{
+    display: inline-block;
+    content: "";
+    vertical-align: middle;
+    height: 100%;
+}
+
+.second-nav-container div a:hover{
+    background-color: gray;
+}
+
+.main-background {
+    background-image: url("asset/welcome-image.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -5;
+    filter: brightness(50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
