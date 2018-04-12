@@ -1,6 +1,6 @@
 main .bgImage {
     position: absolute;
-    background: #333 url("asset/welcome-image.jpg");
+    background: url("../asset/welcome-image.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
