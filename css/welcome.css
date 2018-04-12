@@ -1,6 +1,6 @@
 main .bgImage {
     position: absolute;
-    background: url("../asset/welcome-image.jpg");
+    background: #333 url("../asset/welcome-image.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,6 +8,7 @@ main .bgImage {
     height: 100vh;
     min-height: 700px;
     z-index: -1;
+    filter: brightness(0.4);
 }
 
 #login {
@@ -19,14 +20,17 @@ main .bgImage {
     margin-bottom: 2em;
 }
 
-#login .welcome h1{
-    font-size: 2.3em;
+#login .welcome img {
+    margin: auto;
+    width: 70%;
+    padding-bottom: 0.5em;
 }
 
 #login .welcome p {
     font-size: 1em;
     line-height: 2em;
     padding: 0.5em 0;
+    text-align: center;
 }
 
 .loginBox {
@@ -70,12 +74,12 @@ main .bgImage {
 
 /* media queries */
 @media(min-width: 450px) {
-    #login .welcome h1 {
-        font-size: 3em;
+    #login .welcome img {
+        width: 60%;
     }
 
     #login .welcome p {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 }
 
@@ -87,9 +91,7 @@ main .bgImage {
 
     .welcome {
         grid-column: 2/7;
-        text-align: left;
         align-self: center;
-        margin: 0;
     }
 
     .loginBox{
@@ -98,12 +100,14 @@ main .bgImage {
         margin-left: 4em; 
     }
 
-    #login .welcome h1 {
-        font-size: 5em;
+    #login .welcome img {
+        width: 100%;
+        margin: 0;
     }
 
     #login .welcome p {
-        font-size: 1.3em;
+        font-size: 1.6em;
+        text-align: left;
     }
 
     .loginBox #loginButton {
