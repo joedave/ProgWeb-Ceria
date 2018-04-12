@@ -1,0 +1,108 @@
+/* core css */
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 300px;
+    font-family: 'lato', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h1, p {
+    margin: 0;
+    font-weight: normal;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header, main {
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.topHeader {
+    padding: 1em;
+    background: #f5c73c;
+}
+
+.topHeader #brand img {
+    height: 40px;
+    display: block;
+}
+
+.navbar {
+    background: #ca4e3d;
+}
+
+#navMenu {
+    padding: 0;
+    overflow: auto;
+}
+
+#navMenu li {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0.7em;
+    width: 15%;
+    color: #ffffff;
+}
+
+#navMenu li:hover {
+    cursor: pointer;
+    background: white;
+    color: #ca4e3d;
+}
+
+#navMenu div {
+    display: none;
+    padding: 0.7em 0;
+    width: 100%;
+}
+
+#navMenu div img {
+    margin-right: 2em;
+}
+
+#navMenu #dropdown:hover {
+    cursor: pointer;
+}
+
+@media(max-width: 750px){
+    #navMenu li {
+        display: none;
+    }
+
+    #navMenu div {
+        display: block;
+        text-align: right;
+    }
+
+    #navMenu.responsive li {
+        display: block;
+        padding: 0.7em 0;
+        width: 100%;
+    }
+}
+
+/* main */
+main {
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    overflow: auto;
+}
