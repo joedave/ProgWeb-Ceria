@@ -1,0 +1,80 @@
+/* core css */
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 300px;
+    font-family: 'lato', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+}
+
+h1, p {
+    margin: 0;
+    font-weight: normal;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header, main {
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.topHeader {
+    padding: 1em;
+    background: #f5c73c;
+}
+
+.topHeader #brand img {
+    height: 40px;
+}
+
+.navbar {
+    background: #ca4e3d;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: block;
+    text-align: center;
+    padding: 0.7em;
+    width: 15%;
+    height: 100%;
+    color: #ffffff;
+}
+
+.navbar ul li:hover {
+    cursor: pointer;
+    background: white;
+    color: #ca4e3d;
+}
+/* main */
+main {
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    overflow: auto;
+}
