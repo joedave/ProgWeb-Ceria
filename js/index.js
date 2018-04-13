@@ -7,7 +7,7 @@ $(document).ready(function(){
         }
     });
 
-    $(".content").css({
+    $(".main").css({
         "position":"relative",
         "top":$("header").outerHeight(true)
     });
