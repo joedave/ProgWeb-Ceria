@@ -46,14 +46,32 @@ header {
 
 .navbar {
     background: #ca4e3d;
-}
-
-#navMenu {
-    padding: 0;
+    min-height: 3.3em;
     overflow: auto;
 }
 
+.navbar .container {
+    height: 100%
+}
+
+#navMenu {
+    height: 100%;    
+    padding: 0;
+    overflow: hidden;
+}
+
+#navMenu div {
+    display: none;
+    padding-top: 0.5em;
+    width: 100%;
+}
+
+#navMenu div img {
+    margin-left: 2em;
+}
+
 #navMenu li {
+    height: 100%;
     display: inline-block;
     text-align: center;
     font-size: 1.2em;
@@ -64,19 +82,9 @@ header {
 
 #navMenu li:hover {
     cursor: pointer;
-    background: white;
-    color: #ca4e3d;
+    background: #9c382b;
 }
 
-#navMenu div {
-    display: none;
-    padding: 0.7em 0;
-    width: 100%;
-}
-
-#navMenu div img {
-    margin-right: 2em;
-}
 
 #navMenu #dropdown:hover {
     cursor: pointer;
@@ -89,7 +97,7 @@ header {
 
     #navMenu div {
         display: block;
-        text-align: right;
+        text-align: left;
     }
 
     #navMenu.responsive li {
@@ -99,10 +107,7 @@ header {
     }
 }
 
-/* main */
-main {
-    height: 100vh;
-    min-height: 700px;
-    display: flex;
-    overflow: auto;
+/* content */
+.content {
+    z-index: -1;
 }
