@@ -20,10 +20,6 @@ header {
     overflow: auto;
 }
 
-.navbar .container {
-    height: 100%
-}
-
 #navMenu {
     height: 100%;    
     padding: 0;
