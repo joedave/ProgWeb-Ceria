@@ -1,3 +1,11 @@
+/* main */
+main {
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    overflow: auto;
+}
+
 main .bgImage {
     position: absolute;
     background: #333 url("../asset/welcome-image.jpg");
