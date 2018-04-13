@@ -6,4 +6,9 @@ $(document).ready(function(){
             $("#navMenu").addClass("responsive");
         }
     });
+
+    $(".content").css({
+        "position":"relative",
+        "top":$("header").outerHeight(true)
+    });
 });
