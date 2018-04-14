@@ -8,14 +8,14 @@
 div.content{
 	display: grid;
 	grid-template-columns: 4fr 4fr;
-	background-color: gray;
+	background-image: url("Diospada.jpg");
 }
 
 .button1{
 	font-size: 20px;
 	background-color: orange;
 	height: 35%;
-	width: 65%;
+	width: 70%;
 	padding: 25px 10px;
 	margin: 80px 10px;
 }
@@ -25,25 +25,13 @@ div.content{
 	background-color: white;
 	height: 35%;
 	width: 70%;
-	padding: 25px 10px;
+	padding: 15px 10px;
 	margin: 80px 10px;
 }
-div.main div.container{
-	display: grid;
-	grid-template-rows: 2fr 4.5fr 1fr;
-	height: 370px;
-	margin: 0;
-}
 
-footer div.container{
+.content{
 	display: grid;
-	background: gray;
-	grid-template-columns: 6fr 3fr;
-	margin: 0;
-}
-
-td{
-	border-spacing: 10px;
-	text-align: left;
+	grid-template-columns: 4fr 4fr;
+	background-color: gray;
 }
 
